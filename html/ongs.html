@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar Projeto - Organização Solidária do Bem</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Organização Solidária do Bem</h1>
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li class="has-submenu">
+              <a href="projetos.html" class="active">Projetos</a>
+              <ul class="submenu">
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="ongs.html">Cadastro de Projetos</a></li>
+              </ul>
+            </li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="doacao.html">Doações</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main container fade-in">
+      <section class="about mb-1">
+        <div>
+          <h2>Cadastre seu Projeto Social</h2>
+          <p>
+            Se você representa uma ONG ou instituição sem fins lucrativos, este é o espaço ideal para dar visibilidade à sua causa. 
+            Ao cadastrar seu projeto, ele poderá ser visualizado por voluntários dispostos a ajudar e por pessoas interessadas em contribuir com doações.
+          </p>
+          <p>
+            Promova seu impacto social e conecte-se com uma rede de solidariedade. Juntos, podemos alcançar ainda mais pessoas!
+          </p>
+        </div>
+        <img src="../img/ongs.png" alt="Cadastrar projeto solidário" />
+      </section>
+
+      <section class="form-section mt-3">
+        <h3 class="text-center">Formulário de Cadastro de Projeto</h3>
+        <p class="text-center mb-2">
+          Preencha as informações abaixo para que seu projeto seja exibido em nossa plataforma.
+        </p>
+
+        <form class="form" action="#" method="post">
+          <div class="form-group">
+            <label for="nome-ong">Nome da ONG *</label>
+            <input
+              type="text"
+              id="nome-ong"
+              name="nome-ong"
+              placeholder="Digite o nome da ONG"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="nome-projeto">Nome do Projeto *</label>
+            <input
+              type="text"
+              id="nome-projeto"
+              name="nome-projeto"
+              placeholder="Digite o nome do projeto"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="descricao">Descrição do Projeto *</label>
+            <textarea
+              id="descricao"
+              name="descricao"
+              rows="5"
+              placeholder="Descreva o propósito, as atividades e o público beneficiado"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="categoria">Categoria do Projeto *</label>
+            <select id="categoria" name="categoria" required>
+              <option value="">Selecione uma categoria</option>
+              <option value="educacao">Educação</option>
+              <option value="saude">Saúde</option>
+              <option value="meio-ambiente">Meio Ambiente</option>
+              <option value="assistencia-social">Assistência Social</option>
+              <option value="animais">Proteção Animal</option>
+              <option value="outros">Outros</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="localizacao">Localização *</label>
+            <input
+              type="text"
+              id="localizacao"
+              name="localizacao"
+              placeholder="Cidade / Estado"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="contato">Contato da ONG *</label>
+            <input
+              type="email"
+              id="contato"
+              name="contato"
+              placeholder="E-mail ou telefone"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="imagem">Imagem do Projeto (opcional)</label>
+            <input type="file" id="imagem" name="imagem" accept="image/*" />
+          </div>
+
+          <div class="form-actions text-center mt-2">
+            <button type="submit" class="btn btn-primary">Cadastrar Projeto</button>
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer text-center">
+      <p>&copy; 2025 Organização Solidária do Bem. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.nav');
+      toggle.addEventListener('click', () => nav.classList.toggle('active'));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Como Doar</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Organização Solidária do Bem</h1>
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li class="has-submenu">
+              <a href="projetos.html">Projetos</a>
+              <ul class="submenu">
+                <li><a href="ongs.html">Cadastro de Projetos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+              </ul>
+            </li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="doacao.html" class="active">Doações</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main container">
+      <section>
+        <h2>Como Fazer Doações</h2>
+        <article class="card fade-in">
+          <h3>Seja um Doador</h3>
+          <p>Quer saber mais sobre como ajudar ou colaborar de alguma forma? Fale conosco!</p>
+          <p><strong>Email:</strong> organizacaodobem@gmail.com</p>
+          <p><strong>Telefone:</strong> (11) 15676-1789</p>
+          <a href="cadastro.html" class="btn btn-primary mt-2">Torne-se Voluntário</a>
+        </article>
+      </section>
+      <section class="about">
+        <img src="../img/doador.png" alt="Imagem representando doações">
+        </section>
+    </main>
+
+    <footer class="footer text-center">
+      <p>&copy; 2025 Organização Solidária do Bem. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.nav');
+      toggle.addEventListener('click', () => nav.classList.toggle('active'));
+    </script>
+  </body>
+</html>

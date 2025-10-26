@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organização Solidária do Bem</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Organização Solidária do Bem</h1>
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html" class="active">Início</a></li>
+            <li class="has-submenu">
+              <a href="projetos.html">Projetos</a>
+              <ul class="submenu">
+                <li><a href="ongs.html">Cadastro de Projetos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+              </ul>
+            </li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="doacao.html">Doações</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main container">
+      <section class="about">
+        <div>
+          <h2>Quem somos</h2>
+          <p>
+            A Organização Solidária do Bem é uma instituição sem fins lucrativos dedicada a apoiar e promover o trabalho de ONGs que atuam em diversas áreas, como assistência social, meio ambiente, direitos humanos e educação.
+          </p>
+          <article>
+            <h3>Nosso Objetivo</h3>
+            <p>
+              Nossa missão é fortalecer o impacto dessas organizações, conectando-as com recursos, conhecimentos e redes de apoio. Fornecemos orientação em gestão, captação de recursos e divulgação de projetos, além de promover eventos que integram ONGs e a comunidade.
+            </p>
+          </article>
+        </div>
+        <img src="../img/thumb-12-570x515.png" alt="Voluntários ajudando o próximo" />
+      </section>
+
+      <section class="contact mt-3">
+        <h3>Fale conosco</h3>
+        <address>
+          <p><strong>Endereço:</strong> Avenida Paulista, 123 - Jardim Paulista - São Paulo/SP</p>
+          <p><strong>Telefone:</strong> (11) 15676-1789</p>
+          <p><strong>Email:</strong> organizacaodobem@gmail.com</p>
+        </address>
+      </section>
+    </main>
+
+    <footer class="footer text-center">
+      <p>&copy; 2025 Organização Solidária do Bem. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.nav');
+      toggle.addEventListener('click', () => nav.classList.toggle('active'));
+    </script>
+  </body>
+</html>
