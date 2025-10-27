@@ -51,23 +51,41 @@
                 <label for="nascimento">Data de Nascimento</label>
                 <input type="date" id="nascimento" name="nascimento" required />
               </div>
+             <div>
+  <label for="CPF">CPF</label>
+  <input
+    type="text"
+    id="CPF"
+    name="CPF"
+    pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
+    placeholder="000.000.000-00"
+    required
+  />
+</div>
+<div class="form-row">
+  <div>
+    <label for="telefone">Telefone</label>
+    <input
+      type="tel"
+      id="telefone"
+      name="telefone"
+      placeholder="(XX) XXXXX-XXXX"
+      maxlength="15"
+      required
+    />
+  </div>
+</div>
               <div>
-                <label for="CPF">CPF</label>
-                <input type="text" id="CPF" name="CPF" pattern="[0-9]{3}\\.[0-9]{3}\\.[0-9]{3}-[0-9]{2}" placeholder="000.000.000-00" required />
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div>
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
-              required />
-              </div>
-              <div>
-          <label for="CEP">CEP</label>
-                <input type="text" id="CEP" name="CEP" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000" required />
-              </div>
-            </div>
+  <label for="CEP">CEP</label>
+  <input
+    type="text"
+    id="CEP"
+    name="CEP"
+    pattern="[0-9]{5}\-[0-9]{3}"
+    placeholder="00000-000"
+    required
+  />
+</div>
 
             <div class="form-row">
               <div>
@@ -141,9 +159,6 @@
       <p>&copy; 2025 Organização Solidária do Bem. Todos os direitos reservados.</p>
     </footer>
 
-    <script>
-      const toggle = document.querySelector('.menu-toggle');
-      const nav = document.querySelector('.nav');
-      toggle.addEventListener('click', () => nav.classList.toggle('active'));
-    </script>
+    <script src="../js/app.js"></script>
   </body>
+</html>
