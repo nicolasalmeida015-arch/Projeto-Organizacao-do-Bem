@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Voluntários</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Organização Solidária do Bem</h1>
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li class="has-submenu">
+              <a href="projetos.html">Projetos</a>
+              <ul class="submenu">
+                <li><a href="ongs.html">Cadastro de Projetos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+              </ul>
+            </li>
+            <li><a href="cadastro.html" class="active">Cadastro</a></li>
+            <li><a href="doacao.html">Doações</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main container">
+      <section>
+        <h2>Formulário de Cadastro de Voluntários</h2>
+        <form>
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <div class="form-row">
+              <div>
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required />
+              </div>
+              <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label for="nascimento">Data de Nascimento</label>
+                <input type="date" id="nascimento" name="nascimento" required />
+              </div>
+            </div>
+             <div>
+  <label for="CPF">CPF</label>
+  <input
+    type="text"
+    id="CPF"
+    name="CPF"
+    pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
+    placeholder="000.000.000-00"
+    required
+  />
+</div>
+<div class="form-row">
+  <div>
+    <label for="telefone">Telefone</label>
+    <input
+      type="tel"
+      id="telefone"
+      name="telefone"
+      placeholder="(XX) XXXXX-XXXX"
+      maxlength="15"
+      required
+    />
+  </div>
+</div>
+              <div>
+  <label for="CEP">CEP</label>
+  <input
+    type="text"
+    id="CEP"
+    name="CEP"
+    pattern="[0-9]{5}\-[0-9]{3}"
+    placeholder="00000-000"
+    required
+  />
+</div>
+
+            <div class="form-row">
+              <div>
+                <label for="Endereço">Endereço</label>
+                <input type="text" id="Endereço" name="Endereço" placeholder="Rua Exemplo, 123" required />
+              </div>
+              <div>
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" required />
+              </div>
+              <div>
+    <label for="estado">Estado:</label>
+    <select id="estado" name="estado" required>
+      <option value="">Selecione o estado</option>
+      <option value="AC">Acre (AC)</option>
+      <option value="AL">Alagoas (AL)</option>
+      <option value="AP">Amapá (AP)</option>
+      <option value="AM">Amazonas (AM)</option>
+      <option value="BA">Bahia (BA)</option>
+      <option value="CE">Ceará (CE)</option>
+      <option value="DF">Distrito Federal (DF)</option>
+      <option value="ES">Espírito Santo (ES)</option>
+      <option value="GO">Goiás (GO)</option>
+      <option value="MA">Maranhão (MA)</option>
+      <option value="MT">Mato Grosso (MT)</option>
+      <option value="MS">Mato Grosso do Sul (MS)</option>
+      <option value="MG">Minas Gerais (MG)</option>
+      <option value="PA">Pará (PA)</option>
+      <option value="PB">Paraíba (PB)</option>
+      <option value="PR">Paraná (PR)</option>
+      <option value="PE">Pernambuco (PE)</option>
+      <option value="PI">Piauí (PI)</option>
+      <option value="RJ">Rio de Janeiro (RJ)</option>
+      <option value="RN">Rio Grande do Norte (RN)</option>
+      <option value="RS">Rio Grande do Sul (RS)</option>
+      <option value="RO">Rondônia (RO)</option>
+      <option value="RR">Roraima (RR)</option>
+      <option value="SC">Santa Catarina (SC)</option>
+      <option value="SP">São Paulo (SP)</option>
+      <option value="SE">Sergipe (SE)</option>
+      <option value="TO">Tocantins (TO)</option>
+    </select>
+</div>
+</div>
+</fieldset>
+
+          <fieldset>
+            <legend>Disponibilidade</legend>
+            <label for="Disponibilidade">Quando você pode atuar?</label>
+            <select id="Disponibilidade" name="Disponibilidade" required>
+              <option value="">Selecione uma opção</option>
+              <option value="fimdesemana">Fins de Semana</option>
+              <option value="diasuteis">Dias Úteis</option>
+              <option value="noites">Noites</option>
+              <option value="qualquerhora">Qualquer Hora</option>
+            </select>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+          </div>
+        </form>
+<section class="about">
+        <img src="../img/voluntarios.png" alt="Voluntários ajudando" class="mt-3" />
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer text-center">
+      <p>&copy; 2025 Organização Solidária do Bem. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>

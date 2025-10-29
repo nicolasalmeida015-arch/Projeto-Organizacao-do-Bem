@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos - Organização Solidária do Bem</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Organização Solidária do Bem</h1>
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li class="has-submenu">
+              <a href="projetos.html">Projetos</a>
+              <ul class="submenu">
+                <li><a href="ongs.html">Cadastro de Projetos</a></li>
+                <li><a href="eventos.html" class="active">Eventos</a></li>
+              </ul>
+            </li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="doacao.html">Doações</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main container fade-in">
+      <section class="about mb-1">
+        <div>
+          <h2>Eventos Solidários</h2>
+          <p>
+            Acreditamos que a união de pessoas e organizações é essencial para transformar realidades. 
+            Nossos eventos são espaços de solidariedade e cooperação, onde ONGs e voluntários se unem em prol de causas sociais.
+          </p>
+        </div>
+        <img src="../img/eventos.png" alt="Eventos solidários" />
+      </section>
+
+      <section class="mt-3">
+        <h3 class="text-center">Próximos Eventos</h3>
+        <p class="text-center mb-1">
+          Confira alguns dos eventos organizados por ONGs parceiras que estão fazendo a diferença.
+        </p>
+
+        <div class="cards-grid mt-2">
+          <!-- Evento 1 -->
+          <article class="card">
+            <img src="../img/esperança.png" alt="Mutirão da Esperança" class="card-img" />
+            <h4 class="card-title">Mutirão da Esperança</h4>
+            <p class="card-meta">Data: 15/11/2025 • Local: São Paulo/SP</p>
+            <p>
+              ONG Mãos Amigas realiza um grande mutirão de arrecadação de alimentos e roupas para famílias em vulnerabilidade social.
+            </p>
+            <button class="btn btn-primary mt-2" data-modal="modal1">Saiba Mais</button>
+          </article>
+
+          <!-- Evento 2 -->
+          <article class="card">
+            <img src="../img/corrida.png" alt="Corrida do Bem" class="card-img" />
+            <h4 class="card-title">Corrida do Bem</h4>
+            <p class="card-meta">Data: 22/11/2025 • Local: Rio de Janeiro/RJ</p>
+            <p>
+              Uma corrida beneficente organizada pela ONG Vida Ativa, com renda revertida para programas sociais de inclusão.
+            </p>
+            <button class="btn btn-primary mt-2" data-modal="modal2">Saiba Mais</button>
+          </article>
+
+          <!-- Evento 3 -->
+          <article class="card">
+            <img src="../img/natal.png" alt="Natal Solidário" class="card-img" />
+            <h4 class="card-title">Natal Solidário</h4>
+            <p class="card-meta">Data: 10/12/2025 • Local: Curitiba/PR</p>
+            <p>
+              A ONG Corações Unidos promove um evento natalino com brinquedos, ceia comunitária e atividades culturais.
+            </p>
+            <button class="btn btn-primary mt-2" data-modal="modal3">Saiba Mais</button>
+          </article>
+
+          <!-- Evento 4 -->
+          <article class="card">
+            <img src="../img/feira.png" alt="Feira Verde Sustentável" class="card-img" />
+            <h4 class="card-title">Feira Verde Sustentável</h4>
+            <p class="card-meta">Data: 18/01/2026 • Local: Belo Horizonte/MG</p>
+            <p>
+              Promovida pela ONG Planeta Vivo, a feira incentiva práticas sustentáveis e educação ambiental.
+            </p>
+            <button class="btn btn-primary mt-2" data-modal="modal4">Saiba Mais</button>
+          </article>
+
+          <!-- Evento 5 -->
+          <article class="card">
+            <img src="../img/agasalho.png" alt="Campanha do Agasalho" class="card-img" />
+            <h4 class="card-title">Campanha do Agasalho</h4>
+            <p class="card-meta">Data: 02/06/2026 • Local: Porto Alegre/RS</p>
+            <p>
+              A ONG Abraço Fraterno organiza campanha de arrecadação e distribuição de agasalhos e cobertores.
+            </p>
+            <button class="btn btn-primary mt-2" data-modal="modal5">Saiba Mais</button>
+          </article>
+
+          <!-- Evento 6 -->
+          <article class="card">
+            <img src="../img/seja.png" alt="Dia do Voluntário" class="card-img" />
+            <h4 class="card-title">Dia do Voluntário</h4>
+            <p class="card-meta">Data: 05/12/2025 • Local: Recife/PE</p>
+            <p>
+              Evento de integração promovido pela ONG Unidos pelo Bem, com palestras e homenagens aos voluntários.
+            </p>
+            <button class="btn btn-primary mt-2" data-modal="modal6">Saiba Mais</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer text-center">
+      <p>&copy; 2025 Organização Solidária do Bem. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Modais de eventos -->
+    <div id="modal1" class="modal-backdrop hidden">
+      <div class="modal fade-in">
+        <div class="modal-header">
+          <h3>Mutirão da Esperança</h3>
+          <button class="btn btn-ghost" data-close>&times;</button>
+        </div>
+        <p>
+          O “Mutirão da Esperança” reúne voluntários em uma grande ação solidária de arrecadação de alimentos, roupas e produtos de higiene. 
+          As doações serão destinadas a famílias em comunidades carentes de São Paulo.
+        </p>
+        <p><strong>Data:</strong> 15/11/2025<br><strong>Local:</strong> Centro Comunitário - São Paulo/SP</p>
+        <div class="form-actions">
+          <button class="btn btn-secondary" data-close>Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal-backdrop hidden">
+      <div class="modal fade-in">
+        <div class="modal-header">
+          <h3>Corrida do Bem</h3>
+          <button class="btn btn-ghost" data-close>&times;</button>
+        </div>
+        <p>
+          A “Corrida do Bem” é um evento esportivo e beneficente. A arrecadação será revertida para programas de inclusão social da ONG Vida Ativa.
+        </p>
+        <p><strong>Data:</strong> 22/11/2025<br><strong>Local:</strong> Aterro do Flamengo - Rio de Janeiro/RJ</p>
+        <div class="form-actions">
+          <button class="btn btn-secondary" data-close>Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal3" class="modal-backdrop hidden">
+      <div class="modal fade-in">
+        <div class="modal-header">
+          <h3>Natal Solidário</h3>
+          <button class="btn btn-ghost" data-close>&times;</button>
+        </div>
+        <p>
+          O “Natal Solidário” tem como objetivo proporcionar um fim de ano mais feliz a famílias em situação de vulnerabilidade, 
+          com distribuição de brinquedos e uma ceia comunitária.
+        </p>
+        <p><strong>Data:</strong> 10/12/2025<br><strong>Local:</strong> Praça Central - Curitiba/PR</p>
+        <div class="form-actions">
+          <button class="btn btn-secondary" data-close>Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal4" class="modal-backdrop hidden">
+      <div class="modal fade-in">
+        <div class="modal-header">
+          <h3>Feira Verde Sustentável</h3>
+          <button class="btn btn-ghost" data-close>&times;</button>
+        </div>
+        <p>
+          Evento dedicado à sustentabilidade, com oficinas, palestras e feira de produtos ecológicos. 
+          Ideal para quem busca aprender e contribuir com o meio ambiente.
+        </p>
+        <p><strong>Data:</strong> 18/01/2026<br><strong>Local:</strong> Parque Municipal - Belo Horizonte/MG</p>
+        <div class="form-actions">
+          <button class="btn btn-secondary" data-close>Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal5" class="modal-backdrop hidden">
+      <div class="modal fade-in">
+        <div class="modal-header">
+          <h3>Campanha do Agasalho</h3>
+          <button class="btn btn-ghost" data-close>&times;</button>
+        </div>
+        <p>
+          Durante os meses de inverno, a ONG Abraço Fraterno arrecada agasalhos e cobertores para distribuir às pessoas em situação de rua e famílias carentes.
+        </p>
+        <p><strong>Data:</strong> 02/06/2026<br><strong>Local:</strong> Ginásio Municipal - Porto Alegre/RS</p>
+        <div class="form-actions">
+          <button class="btn btn-secondary" data-close>Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal6" class="modal-backdrop hidden">
+      <div class="modal fade-in">
+        <div class="modal-header">
+          <h3>Dia do Voluntário</h3>
+          <button class="btn btn-ghost" data-close>&times;</button>
+        </div>
+        <p>
+          Um dia especial para celebrar o trabalho voluntário, com workshops, histórias inspiradoras e homenagens a quem dedica tempo para ajudar o próximo.
+        </p>
+        <p><strong>Data:</strong> 05/12/2025<br><strong>Local:</strong> Centro de Convenções - Recife/PE</p>
+        <div class="form-actions">
+          <button class="btn btn-secondary" data-close>Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>
