@@ -269,3 +269,194 @@ legend{font-weight:700}
 .footer a:hover {
   color: var(--cor-primaria-500);
 }
+/* =======================
+   ACESSIBILIDADE / CONTRASTE / DARK MODE
+   ======================= */
+
+/* Botões de acessibilidade fixos */
+.accessibility-tools {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 9999;
+  display: flex;
+  gap: 0.5rem;
+}
+.access-btn {
+  background: var(--cor-primaria-500);
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: var(--transition-base);
+}
+.access-btn:focus-visible {
+  outline: 3px solid var(--cor-secundaria-500);
+  outline-offset: 3px;
+}
+.access-btn:hover {
+  background: var(--cor-primaria-700);
+}
+
+/* ======= ALTO CONTRASTE ======= */
+.high-contrast {
+  --fundo: #000;
+  --surface: #000;
+  --neutro-900: #fff;
+  --neutro-700: #fff;
+  --neutro-500: #fff;
+  --cor-primaria-500: #ff0;
+  --cor-secundaria-500: #0ff;
+  color: #fff;
+  background-color: #000;
+}
+.high-contrast a,
+.high-contrast button {
+  color: #ff0;
+  border-color: #ff0;
+}
+
+/* ======= MODO ESCURO ======= */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo: #121212;
+    --surface: #1e1e1e;
+    --neutro-900: #fff;
+    --neutro-500: #ccc;
+    --cor-primaria-500: #4ade80;
+  }
+}
+.dark-mode {
+  background-color: var(--fundo);
+  color: var(--neutro-900);
+}
+.dark-mode .header,
+.dark-mode .footer {
+  background-color: var(--surface);
+  color: var(--neutro-900);
+}
+
+/* ======= Contraste mínimo de 4.5:1 ======= */
+a, button, label, h1, h2, h3, h4, h5, h6, p {
+  color: var(--neutro-900);
+}
+.btn-primary {
+  background-color: var(--cor-primaria-500);
+  color: #fff;
+}
+.btn-secondary {
+  background-color: var(--cor-secundaria-500);
+  color: #fff;
+}
+/* ====== ACESSIBILIDADE FORMULÁRIOS ====== */
+
+/* Campos de texto */
+input,
+select,
+textarea {
+  background-color: #ffffff; /* Fundo branco para leitura */
+  color: #000000; /* Texto preto */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #005fcc;
+  background-color: #f5f8ff;
+  color: #000;
+}
+
+/* Labels e títulos */
+label,
+legend {
+  color: #222222;
+  font-weight: 600;
+}
+
+/* Corrige contraste no modo escuro */
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border: 1px solid #777;
+}
+
+body.dark-mode label,
+body.dark-mode legend {
+  color: #f0f0f0;
+}
+
+/* Corrige contraste no modo alto contraste */
+body.high-contrast input,
+body.high-contrast select,
+body.high-contrast textarea {
+  background-color: #000000;
+  color: #ffff00;
+  border: 2px solid #00ffff;
+}
+
+body.high-contrast label,
+body.high-contrast legend {
+  color: #00ffff;
+}
+/* ====== CORREÇÃO DE LEGIBILIDADE NOS FORMULÁRIOS ====== */
+
+input,
+select,
+textarea {
+  background-color: #ffffff !important; /* Fundo branco */
+  color: #000000 !important; /* Texto preto */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+/* Quando o campo estiver focado (clicado) */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #005fcc;
+  background-color: #f0f7ff !important;
+  color: #000 !important;
+}
+
+/* Labels */
+label,
+legend {
+  color: #111111 !important;
+  font-weight: 600;
+}
+
+/* ====== MODO ESCURO ====== */
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: #2c2c2c !important; /* Fundo cinza escuro */
+  color: #ffffff !important; /* Texto branco */
+  border: 1px solid #888;
+}
+
+body.dark-mode label,
+body.dark-mode legend {
+  color: #f2f2f2 !important;
+}
+
+/* ====== MODO ALTO CONTRASTE ====== */
+body.high-contrast input,
+body.high-contrast select,
+body.high-contrast textarea {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+  border: 2px solid #00ffff !important;
+}
+
+body.high-contrast label,
+body.high-contrast legend {
+  color: #00ffff !important;
+}
