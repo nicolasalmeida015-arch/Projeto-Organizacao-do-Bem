@@ -11,7 +11,7 @@ O objetivo foi desenvolver um website responsivo e acessível para a **Organiza�
 ### 🔗 Demonstração Online
 
 
-**Acesse o site:** []
+**Acesse o site:** [https://organizacaosolidariadobem.netlify.app/]
 
 ## ✨ Requisitos Cumpridos
 
